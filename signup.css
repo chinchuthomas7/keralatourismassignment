@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-size: cover;
+    color: #f9fafb;
+}
+.signupform{
+    border-style: dotted;
+    border-color: rgb(243, 240, 45);
+    border-radius: 1em;
+     margin: 2px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 200px;
+    margin-top: 20px;
+    
+    
+   
+    background-color: rgba(0, 0, 0, 0.479);
+    
+ }
+ .signupform h4{
+    padding-left: 100px;
+    padding-top: 10px;
+  
+ color: rgb(36, 233, 36); 
+}

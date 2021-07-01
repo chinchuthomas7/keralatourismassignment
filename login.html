@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>LOGIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMPLE LOGIN</title>
     <link rel="stylesheet" href="login.css">
- <!-- bootstrap link -->
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-</head>
-<body style="background-image:url(loginpage.jpg) ">
-    <!-- form -->
-   
-    <div>
-     
-    <form style="background-color:rgba(255, 255, 255, 0.267);">
-      <h4 style="color: cornsilk;">LOGIN</h4>
-        <div class="mb-3" style="color: rgb(248, 248, 248);">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div  id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3" style="color: white;">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check" style="color: wheat;">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
   
+</head>
 
+<body>
+    <div class="login_page">
+        <h2>LOGIN PAGE</h2>
+        <br>
+        <br>
+        <form action="index.html" onsubmit="return validate();" >
+
+            <label for="email">Email</label>
+            <br>
+            <input type="text" placeholder="email" id="email" autocomplete="off">
+           <br>
+            <small id="email_error"></small>
+
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="text" placeholder="password" id="password" autocomplete="off">
+           <br>
+            <small id="password_error"></small>
+            <br>
+            <br>
+            <button style="background-color:darkslateblue;" type="submit" id="submit" >login</button>
+        </form>
+
+
+    </div>
+ <script >
+     var email= document.getElementById("email");
+     var password =document.getElementById("password");
+
+     function validate(){
+        let emailCheck = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+        let passwordCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+
+        if (emailCheck.test(email.value)==false){
+            email_error.innerHTML="not a valid email id";
+            email_error.style.color="red";
+            return false;
+        }
+        else if(emailCheck.test(email.value)==true){
+            email_error.innerHTML="valid email id";
+            email_error.style.color="green";
+        }
+    if(passwordCheck.test(password.value)==false){
+        password_error.innerHTML="enter a valid password";
+        password_error.style.color="red";
+        return false;
+    }
+    else if(passwordCheck.test(password.value)==true){
+        password_error.innerHTML="valid password";
+        password_error.style.color="green";
+    }
+    return true;
+     }
+
+ </script> 
 </body>
+
 </html>

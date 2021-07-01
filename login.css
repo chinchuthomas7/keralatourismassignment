@@ -1,22 +1,38 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
+
 body{
-    background-size: cover;
+    background-image: url(data:image/jpeg;base64,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);
+     background-size: cover;
 }
-form{
-    border: rgb(238, 137, 130);
-    border-style:ridge;
-    border-radius: 2em;
-    padding: 20px;
-    margin: 100px;
+.login_page{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
     margin-top: 100px;
-    margin-right:400px ;
-    margin-left: 400px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#emailHelp{
-    color: rgb(1, 15, 4);
+input[type=text]{
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        width: 150px;
+    
+    }
+    
+
+button{
+    color: rgb(255, 255, 255);
+    width: 90px;
+    height: 30px;
+    border-style: groove;
+    border-radius: 3px;
+    border-color: lightseagreen;    
 
 }
-

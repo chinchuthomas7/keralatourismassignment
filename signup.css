@@ -1,31 +1,29 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body{
-    background-size: cover;
-    color: #f9fafb;
+    background-image: url(https://4k-wallpapers.net/uploads/posts/2021-02/thumbs/1614185673_valley-landscape-mountains-gradient-background-colorful-background.jpg);
+    background-size:cover ;
 }
-.signupform{
-    border-style: dotted;
-    border-color: rgb(243, 240, 45);
-    border-radius: 1em;
-     margin: 2px;
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 200px;
-    margin-top: 20px;
-    
-    
-   
-    background-color: rgba(0, 0, 0, 0.479);
-    
- }
- .signupform h4{
-    padding-left: 100px;
-    padding-top: 10px;
+
+h2{
+   color: rgb(44, 231, 238);
+}
+button{
+    background:linear-gradient(to left, #74ebd5, #9face6);
+    border: none;
+    border-radius: 5px;
+    border-style: groove;
+    height: 40px;
+}
+
+ 
   
- color: rgb(36, 233, 36); 
-}
+  form input{
+    border: 1px solid rgba(211, 211, 211, 0.308);
+    transition: all 0.3s;
+  }
+
+
